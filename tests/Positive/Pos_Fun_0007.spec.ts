@@ -9,10 +9,10 @@ test('Pos_Fun_0007 - Future plan', async ({ page }) => {
   });
 
   // Enter Singlish
-  await singlishInput.fill('mama vaeda karanavaa.');
+  await singlishInput.fill('api heta trip ekak yamu.');
 
   // Wait until Sinhala text appears
-  const sinhalaOutput = page.getByText('මම වැඩ කරනවා.');
+  const sinhalaOutput = page.getByText('අපි හෙට trip එකක් යමු.');
 
   await expect(sinhalaOutput).toBeVisible();
 });
