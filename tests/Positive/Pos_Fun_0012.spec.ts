@@ -9,10 +9,10 @@ test('Pos_Fun_0012 - Plural pronoun usage', async ({ page }) => {
   });
 
   // Enter Singlish
-  await singlishInput.fill('mama vaeda karanavaa.');
+  await singlishInput.fill('oyaalaa enavaa.');
 
   // Wait until Sinhala text appears
-  const sinhalaOutput = page.getByText('මම වැඩ කරනවා.');
+  const sinhalaOutput = page.getByText('ඔයාලා එනවා.');
 
   await expect(sinhalaOutput).toBeVisible();
 });

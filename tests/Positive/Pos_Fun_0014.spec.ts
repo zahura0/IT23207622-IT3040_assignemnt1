@@ -9,10 +9,10 @@ test('Pos_Fun_0014 - Convert very polite request form', async ({ page }) => {
   });
 
   // Enter Singlish
-  await singlishInput.fill('mama vaeda karanavaa.');
+  await singlishInput.fill('karuNaakaralaa oyaata puLuvannam mata eeka poddak explain karannako');
 
   // Wait until Sinhala text appears
-  const sinhalaOutput = page.getByText('මම වැඩ කරනවා.');
+  const sinhalaOutput = page.getByText('කරුණාකරලා ඔයාට පුළුවන්නම් මට ඒක පොඩ්ඩක් explain කරන්නකො');
 
   await expect(sinhalaOutput).toBeVisible();
 });

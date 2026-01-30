@@ -9,10 +9,10 @@ test('Pos_Fun_0011 - Currency amount', async ({ page }) => {
   });
 
   // Enter Singlish
-  await singlishInput.fill('mama vaeda karanavaa.');
+  await singlishInput.fill('bill eka Rs. 3200.');
 
   // Wait until Sinhala text appears
-  const sinhalaOutput = page.getByText('මම වැඩ කරනවා.');
+  const sinhalaOutput = page.getByText('bill එක Rs. 3200.');
 
   await expect(sinhalaOutput).toBeVisible();
 });

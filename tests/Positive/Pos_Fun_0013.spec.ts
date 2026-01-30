@@ -9,10 +9,10 @@ test('Pos_Fun_0013 - Convert a short daily greeting phrase', async ({ page }) =>
   });
 
   // Enter Singlish
-  await singlishInput.fill('mama vaeda karanavaa.');
+  await singlishInput.fill('gihin balala enna.');
 
   // Wait until Sinhala text appears
-  const sinhalaOutput = page.getByText('මම වැඩ කරනවා.');
+  const sinhalaOutput = page.getByText('ගිහින් බලල එන්න.');
 
   await expect(sinhalaOutput).toBeVisible();
 });
