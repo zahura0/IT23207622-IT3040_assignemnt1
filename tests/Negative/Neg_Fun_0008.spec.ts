@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('Neg_Fun_0008 - [Add your test description here]', async ({ page }) => {
+test('Neg_Fun_0008 - Converts mixed Singlish and English words without losing semantic meaning', async ({ page }) => {
 	await page.goto('https://www.swifttranslator.com/');
 
 	// Input
