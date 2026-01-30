@@ -1,8 +1,11 @@
 # IT3040 Assignment – Automated Web Testing
 
+
 ## Student Information
 **Name:** PERERA K H G H N  
-**IT Number:** IT23207622
+**IT Number:** IT23207622  
+**Semester:** 3rd Year, 2nd Semester  
+**Group Number:** 2.2
 
 ## Project Overview
 This repository contains automated web tests for the IT3040 assignment, using Playwright and TypeScript. The tests are organized into positive and negative scenarios to ensure comprehensive coverage of the application's functionality and error handling.
