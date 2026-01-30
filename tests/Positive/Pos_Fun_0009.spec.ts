@@ -9,10 +9,10 @@ test('Pos_Fun_0009 - Informal slang phrase', async ({ page }) => {
   });
 
   // Enter Singlish
-  await singlishInput.fill('mama vaeda karanavaa.');
+  await singlishInput.fill('ela machan vaede hari');
 
   // Wait until Sinhala text appears
-  const sinhalaOutput = page.getByText('මම වැඩ කරනවා.');
+  const sinhalaOutput = page.getByText('එල මචන් වැඩෙ හරි');
 
   await expect(sinhalaOutput).toBeVisible();
 });
