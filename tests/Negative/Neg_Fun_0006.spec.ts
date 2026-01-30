@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('Neg_Fun_0006 - Converts Singlish with comma separation and inconsistent repetition correctly', async ({ page }) => {
+test('Neg_Fun_0006 - Converts Singlish with comma separation and inconsistent repetition', async ({ page }) => {
 	await page.goto('https://www.swifttranslator.com/');
 
 	// Input

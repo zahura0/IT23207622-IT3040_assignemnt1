@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('Neg_Fun_0009 - [Add your test description here]', async ({ page }) => {
+test('Neg_Fun_0009 - Handles Singlish input with embedded English technical terms', async ({ page }) => {
 	await page.goto('https://www.swifttranslator.com/');
 
 	// Input
@@ -9,10 +9,10 @@ test('Neg_Fun_0009 - [Add your test description here]', async ({ page }) => {
 	});
 
 	// Enter Singlish
-	await singlishInput.fill('[Enter your Singlish test input here]');
+	await singlishInput.fill('eyaata life support eken thamaa inna wenne');
 
 	// Wait until Sinhala text appears
-	const sinhalaOutput = page.getByText('[Expected Sinhala output here]');
+	const sinhalaOutput = page.getByText('එයාට life support එකෙන් තම ඉන්න වෙන්නෙ');
 
 	await expect(sinhalaOutput).toBeVisible();
 });

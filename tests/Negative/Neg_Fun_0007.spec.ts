@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('Neg_Fun_0007 - Handles mixed casing and complex phonetic Singlish words accurately', async ({ page }) => {
+test('Neg_Fun_0007 - Handles mixed casing and complex phonetic Singlish words', async ({ page }) => {
 	await page.goto('https://www.swifttranslator.com/');
 
 	// Input
