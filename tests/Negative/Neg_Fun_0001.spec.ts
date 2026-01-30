@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('Pos_Fun_0004 - Interrogative casual question', async ({ page }) => {
+test('Neg_Fun_0001 - Joined word handling', async ({ page }) => {
   await page.goto('https://www.swifttranslator.com/');
 
   // Input
@@ -9,10 +9,10 @@ test('Pos_Fun_0004 - Interrogative casual question', async ({ page }) => {
   });
 
   // Enter Singlish
-  await singlishInput.fill('oyaa monavadha karannee?');
+  await singlishInput.fill('matahariyatathiyenavaa');
 
   // Wait until Sinhala text appears
-  const sinhalaOutput = page.getByText('ඔයා මොනවද කරන්නේ?');
+  const sinhalaOutput = page.getByText('මට හරියට තියෙනවා');
 
   await expect(sinhalaOutput).toBeVisible();
 });
