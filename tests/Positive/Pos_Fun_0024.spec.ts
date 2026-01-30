@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('Pos_Fun_0015 - Convert with line break multi-line', async ({ page }) => {
+test('Pos_Fun_0021 - Complex instructions with reminder and mixed English', async ({ page }) => {
   await page.goto('https://www.swifttranslator.com/');
 
   // Input

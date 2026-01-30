@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('Pos_Fun_0016 - Simple greeting conversion', async ({ page }) => {
+test('Pos_Fun_0016 - Convert negative sentence with university name and special capitalization', async ({ page }) => {
   await page.goto('https://www.swifttranslator.com/');
 
   // Input

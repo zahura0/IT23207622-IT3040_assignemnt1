@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('Pos_Fun_0005 - Simple greeting conversion', async ({ page }) => {
+test('Pos_Fun_0005 - Imperative instruction', async ({ page }) => {
   await page.goto('https://www.swifttranslator.com/');
 
   // Input
