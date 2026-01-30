@@ -9,10 +9,10 @@ test('Pos_Fun_0010 - Time reference', async ({ page }) => {
   });
 
   // Enter Singlish
-  await singlishInput.fill('mama vaeda karanavaa.');
+  await singlishInput.fill('meeting eka 9.15 AM.');
 
   // Wait until Sinhala text appears
-  const sinhalaOutput = page.getByText('මම වැඩ කරනවා.');
+  const sinhalaOutput = page.getByText('meeting එක 9.15 AM.');
 
   await expect(sinhalaOutput).toBeVisible();
 });
