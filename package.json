@@ -1,0 +1,23 @@
+{
+  "name": "it23207622-it3040_assignemnt1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zahura0/IT23207622-IT3040_assignemnt1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/zahura0/IT23207622-IT3040_assignemnt1/issues"
+  },
+  "homepage": "https://github.com/zahura0/IT23207622-IT3040_assignemnt1#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.58.0",
+    "@types/node": "^25.1.0"
+  }
+}
