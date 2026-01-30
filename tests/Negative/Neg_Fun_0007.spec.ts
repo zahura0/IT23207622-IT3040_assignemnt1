@@ -9,10 +9,10 @@ test('Neg_Fun_0007 - [Add your test description here]', async ({ page }) => {
 	});
 
 	// Enter Singlish
-	await singlishInput.fill('[Enter your Singlish test input here]');
+	await singlishInput.fill('thorathuru thaakShaNa kSheethrayata adhaLa raekiyaa naehae');
 
 	// Wait until Sinhala text appears
-	const sinhalaOutput = page.getByText('[Expected Sinhala output here]');
+	const sinhalaOutput = page.getByText('තොරතුරු තාක්ෂණ ක්ෂේත්‍රයට අදාළ රැකියා නැහැ');
 
 	await expect(sinhalaOutput).toBeVisible();
 });

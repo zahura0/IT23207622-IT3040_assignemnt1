@@ -9,10 +9,10 @@ test('Neg_Fun_0006 - [Add your test description here]', async ({ page }) => {
 	});
 
 	// Enter Singlish
-	await singlishInput.fill('[Enter your Singlish test input here]');
+	await singlishInput.fill('issarahata poddak yanna, poddi poddak');
 
 	// Wait until Sinhala text appears
-	const sinhalaOutput = page.getByText('[Expected Sinhala output here]');
+	const sinhalaOutput = page.getByText('ඉස්සරහට පොඩ්ඩක් යන්න, පොඩ් පොඩ්ඩක්');
 
 	await expect(sinhalaOutput).toBeVisible();
 });
