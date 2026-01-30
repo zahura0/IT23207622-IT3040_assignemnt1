@@ -9,10 +9,10 @@ test('Pos_Fun_0005 - Imperative instruction', async ({ page }) => {
   });
 
   // Enter Singlish
-  await singlishInput.fill('mama vaeda karanavaa.');
+  await singlishInput.fill('issarahata poddak yanna.');
 
   // Wait until Sinhala text appears
-  const sinhalaOutput = page.getByText('මම වැඩ කරනවා.');
+  const sinhalaOutput = page.getByText('ඉස්සරහට පොඩ්ඩක් යන්න.');
 
   await expect(sinhalaOutput).toBeVisible();
 });

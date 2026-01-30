@@ -9,10 +9,10 @@ test('Pos_Fun_0006 - Negative ability statement', async ({ page }) => {
   });
 
   // Enter Singlish
-  await singlishInput.fill('mama vaeda karanavaa.');
+  await singlishInput.fill('mata eeka karanna baee.');
 
   // Wait until Sinhala text appears
-  const sinhalaOutput = page.getByText('මම වැඩ කරනවා.');
+  const sinhalaOutput = page.getByText('මට ඒක කරන්න බෑ.');
 
   await expect(sinhalaOutput).toBeVisible();
 });
