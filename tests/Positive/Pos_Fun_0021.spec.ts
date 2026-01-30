@@ -9,10 +9,10 @@ test('Pos_Fun_0021 - Convert a short daily greeting phrase', async ({ page }) =>
   });
 
   // Enter Singlish
-  await singlishInput.fill('mama vaeda karanavaa.');
+  await singlishInput.fill('oyaa heta gedhara yadhdhi anivaaren yathura meesa uda thiyalaa yanna. mathaka aethuva kaeema ekath aragena yanna , pigaanen vahalaa thiyenne. mama yanavaa heta udhenma magee IELTS Exam eka karanna. parissamin yanna ehenam');
 
   // Wait until Sinhala text appears
-  const sinhalaOutput = page.getByText('මම වැඩ කරනවා.');
+  const sinhalaOutput = page.getByText('ඔයා හෙට ගෙදර යද්දි අනිවාරෙන් යතුර මේස උඩ තියලා යන්න. මතක ඇතුව කෑම එකත් අරගෙන යන්න , පිගානෙන් වහලා තියෙන්නෙ. මම යනවා හෙට උදෙන්ම මගේ IELTS Exam එක කරන්න. පරිස්සමින් යන්න එහෙනම්');
 
   await expect(sinhalaOutput).toBeVisible();
 });

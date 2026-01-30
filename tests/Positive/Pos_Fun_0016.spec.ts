@@ -9,10 +9,10 @@ test('Pos_Fun_0016 - Convert negative sentence with university name and special 
   });
 
   // Enter Singlish
-  await singlishInput.fill('mama vaeda karanavaa.');
+  await singlishInput.fill('SLIIT vishva vidhYaalaya tharam karadharakaarii thaenak thavath naehae.');
 
   // Wait until Sinhala text appears
-  const sinhalaOutput = page.getByText('මම වැඩ කරනවා.');
+  const sinhalaOutput = page.getByText('SLIIT විශ්ව විද්‍යාලය තරම් කරදරකාරී තැනක් තවත් නැහැ.');
 
   await expect(sinhalaOutput).toBeVisible();
 });

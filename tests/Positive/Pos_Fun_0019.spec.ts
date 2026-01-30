@@ -9,10 +9,10 @@ test('Pos_Fun_0019 - Past tense fun activity with mixed English', async ({ page 
   });
 
   // Enter Singlish
-  await singlishInput.fill('mama vaeda karanavaa.');
+  await singlishInput.fill('iiyee mama sentoosaa gihin hoDHAtama themenakam water slide ekee sellam kaLaa.');
 
   // Wait until Sinhala text appears
-  const sinhalaOutput = page.getByText('මම වැඩ කරනවා.');
+  const sinhalaOutput = page.getByText('ඊයේ මම සෙන්ටෝසා ගිහින් හොඳටම තෙමෙනකම් water slide එකේ සෙල්ලම් කළා.');
 
   await expect(sinhalaOutput).toBeVisible();
 });

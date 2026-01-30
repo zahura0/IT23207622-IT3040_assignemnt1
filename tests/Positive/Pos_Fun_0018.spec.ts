@@ -9,10 +9,10 @@ test('Pos_Fun_0018 - Complex sentence with past effort and ongoing help', async 
   });
 
   // Enter Singlish
-  await singlishInput.fill('mama vaeda karanavaa.');
+  await singlishInput.fill('dhavasa puraama vaeda karalaa mahansi vuNath, mama thaamath magee yaaLuvaata eyaagee parigaNakaya hadhanna udhav karanavaa.');
 
   // Wait until Sinhala text appears
-  const sinhalaOutput = page.getByText('මම වැඩ කරනවා.');
+  const sinhalaOutput = page.getByText('දවස පුරාම වැඩ කරලා මහන්සි වුණත්, මම තාමත් මගේ යාළුවාට එයාගේ පරිගණකය හදන්න උදව් කරනවා.');
 
   await expect(sinhalaOutput).toBeVisible();
 });
