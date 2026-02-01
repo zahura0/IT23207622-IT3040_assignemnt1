@@ -11,7 +11,7 @@ test('Pos_Fun_0001 - Simple greeting conversion', async ({ page }) => {
   // Enter Singlish
   await singlishInput.fill('mama vaeda karanavaa.');
 
-  // Wait until Sinhala text appear
+  // Wait until Sinhala text appears
   const sinhalaOutput = page.getByText('මම වැඩ කරනවා.');
 
   await expect(sinhalaOutput).toBeVisible();
